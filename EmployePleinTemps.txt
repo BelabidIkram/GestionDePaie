@@ -10,7 +10,7 @@ public class EmployePleinTemps extends Employe {
 
 	
 
-	
+	// les attributs 
 					private double prime;
 					private double SalaryByWeek;
 
@@ -21,7 +21,7 @@ public class EmployePleinTemps extends Employe {
 					}
 					
 					
-					
+					// Getters
 					public double getPrime(){
 						return prime;
 					}
@@ -32,7 +32,7 @@ public class EmployePleinTemps extends Employe {
 					
 
 					
-					/Setters
+					//Setters
 					
 					public void setPrime(double prime){
 						this.prime=prime;
@@ -52,12 +52,14 @@ public class EmployePleinTemps extends Employe {
 					}
 					
 					
+					//methode pour calculer le salaire de l'employe 
 					
 					public void CalculateSalary(){
                                         Scanner Sc=new Scanner(System.in);
 						System.out.println("is this employer work in night and weekends ?(Y/N)");
 						char response=Sc.nextLine().charAt(0) ;
-						if(rep == 'Y'){
+						if(response='Y')
+						{
 							System.out.println("Give me the bonification added to the Employer ! ");
 							this.prime=Sc.nextDouble();
 							super.salary=this.getSalaryByWeek()*4+this.getPrime();
