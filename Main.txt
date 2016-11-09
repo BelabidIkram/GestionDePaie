@@ -6,7 +6,7 @@ import java.util.*;
 
 // Created by BELABID IKRAM FATIMA ZOHRA on 06/11/2016 
 
-
+// class main pour tester les classes
 public class Main {
 
 
@@ -21,7 +21,7 @@ public class Main {
 			int i=Sc.nextInt();
 			for(int j=1;j<=i;j++){
 								System.out.println(" \n Choose the sort of your employer please  :");
-								System.out.println("1-Employer Simple \n2-Employer Plein Temps \n3-Employer Temps Partiel ");
+			System.out.println("1-Employer Simple \n2-Employer Plein Temps \n3-Employer Temps Partiel ");
 								int choice =Sc.nextInt();
 			switch(choice){
 			
