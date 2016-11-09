@@ -1,0 +1,57 @@
+package Heritage;
+
+import java.util.*;
+
+
+// Created by BELABID IKRAM FATIMA ZOHRA on 06/11/2016 
+
+
+public class EmployeTempsPartiel extends Employe {
+
+
+
+			private int Hours;
+			private double SalaryByHours;
+
+
+		
+			public EmployeTempsPartiel(){
+				this.Hours=0;
+				this.SalaryByHours=0.0;
+			}
+
+
+			public int getHours(){
+				return Hours;
+			}
+
+			public double getSalaryByHours(){
+				return SalaryByHours;
+			}
+			
+			
+			public void setHours(int Hours){
+				this.Hours=Hours;
+			}
+			public void setSalaryByHours(double SalaryByHours){
+				this.SalaryByHours=SalaryByHours;
+			}
+			
+			public void Afficher(){
+				super.Afficher();	
+				this.CalculateSalary();
+			}
+			
+			public void CalculateSalary(){
+                       Scanner Sc=new Scanner(System.in);
+
+				System.out.println("How many hours this employer work !! ");
+				this.Hours=Sc.nextInt();
+				super.salary=this.getSalaryByHours()*this.getHours();
+		     }
+			
+			public String ChequePaie(){
+		        return (super.ChequePaie()+ "temps Partiel");
+		}
+	
+}

@@ -1,0 +1,63 @@
+package Heritage;
+
+import java.util.*;
+
+
+// Created by BELABID IKRAM FATIMA ZOHRA on 06/11/2016 
+
+
+public class Employe {
+	
+			protected String name;
+			protected String function;
+			protected double salary;
+			
+			public Employe(){
+				this.name=name;
+				this.function=function;
+				this.salary=0.0;
+			}
+			
+			public void Afficher(){
+                     Scanner Sc=new Scanner(System.in);
+				System.out.println("Give me the name of the employer please ");
+				this.nom=Sc.nextLine();
+				System.out.println("Enter his fucntion please ! ");
+				this.fonction=Sc.nextLine();
+				System.out.println("Enter his Salary please !");
+				this.salaire=Sc.nextDouble();
+				
+			}
+			//Getters
+
+			public String getName(){
+				return name;
+			}
+			
+			public String getFunction(){
+				return function;
+			}
+			
+			public double getSalary(){
+				return salary;
+			}
+			//Setters
+			public void setName(String name){
+				this.name=name;
+			}
+			
+			public void setFunction(String function){
+				this.function=function;
+			}
+			
+			public void setSalary(double salary){
+				this.salary=salary;
+			}
+			
+			public String ChequePaie(){
+				return "Payer a l'ordre de "+ getName +" ( "+ getFunction +" ) ***"+ getSalary +" DA //Employe";
+			}
+			
+			
+			
+}

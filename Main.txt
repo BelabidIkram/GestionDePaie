@@ -1,0 +1,49 @@
+package Heritage;
+
+import java.util.*;
+
+
+
+// Created by BELABID IKRAM FATIMA ZOHRA on 06/11/2016 
+
+
+public class Main {
+
+
+		public static void main(String [] args){	
+			Scanner Sc= new Scanner(System.in);
+			
+			Employe em=new Employe();
+			EmployePleinTemps em1=new EmployePleinTemps();
+			EmployeTempsPartiel em2=new EmployeTempsPartiel();
+			
+			System.out.println("How many employers do you have  !!");
+			int i=Sc.nextInt();
+			for(int j=1;j<=i;j++){
+								System.out.println(" \n Choose the sort of your employer please  :");
+								System.out.println("1-Employer Simple \n2-Employer Plein Temps \n3-Employer Temps Partiel ");
+								int choice =Sc.nextInt();
+			switch(choice){
+			
+			case 1: 
+                              em.Afficher();
+			System.out.println(em.ChequePaie());
+		    System.out.println("=============================");
+		                break;
+			case 2:
+                              em1.Afficher();
+			System.out.println(em1.ChequePaie());
+			System.out.println("=============================");
+			        break;
+			case 3: 
+                              em2.Afficher();
+			System.out.println(em2.ChequePaie());
+			System.out.println("=============================");
+                               break;
+			default : System.out.println(" UNKNOWN !! ");
+			choice = Sc.nextInt();
+			}
+			}
+			System.out.println("^_^  Have a Nice Day ! ^_^ ");
+		}
+}
