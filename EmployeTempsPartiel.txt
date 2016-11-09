@@ -9,7 +9,7 @@ import java.util.*;
 public class EmployeTempsPartiel extends Employe {
 
 
-
+// les attributs 
 			private int Hours;
 			private double SalaryByHours;
 
